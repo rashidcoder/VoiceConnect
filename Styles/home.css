@@ -1,0 +1,60 @@
+#home{
+  padding: 20px 200px 60px 120px;
+  padding: 60px 120px;
+  width: 100%;
+}
+.home-box{
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  padding: 10px;
+  border: 1px soliid black;
+}
+.home-items{
+  border: 1px soliid black;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+.home-text{
+  display: flex;
+  width: 610px;
+  flex-direction: column;
+  gap: 20px;
+}
+.home-text h1{
+  font-size: 40px;
+  font-weight: 600;
+}
+.consultation-button {
+  padding: 12px 24px;
+  background-color: #2655F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.consultation-button:hover {
+  background-color: #1E42BE;
+  cursor: pointer;
+}
+
+.image{
+  margin-right: 100px;
+  z-index: 2;
+  
+}
+
+.lines{
+  position: absolute;
+  top: 170px;
+  left: 760px;
+  z-index: 0;
+  width: 552px;
+  height: 570px;
+}
