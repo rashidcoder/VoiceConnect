@@ -39,17 +39,6 @@ header .header-container .contact {
   width: 207px;
   height: 52px;
   padding: 14px 28px;
-  background-color: #2655F3;
-  background: linear-gradient(90deg, #2655F3 0%, #1E42BE 58%, #16318D 100%);
-  color: white;
-  border: transparent;
-  transition: 0.3s ease-in;
-  border-radius: 5px;
-}
-
-header .header-container .contact:hover{
-  cursor: pointer;
-  background-color: #1E42BE;
 }
 
 .header-container nav{
