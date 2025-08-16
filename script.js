@@ -1,3 +1,4 @@
+// FAQ Answare See Functions
 const buttons = document.querySelectorAll(".see-more");
 
 buttons.forEach(btn => {
@@ -17,6 +18,7 @@ buttons.forEach(btn => {
 });
 
 
+// Form Phone Number Input Funtions
 document.getElementById("phoneNumber").addEventListener("input", function () {
   let value = this.value.replace(/[^0-9+ ]/g, "");
 
@@ -35,50 +37,37 @@ document.getElementById("phoneNumber").addEventListener("input", function () {
 
   this.value = formatted.trim();
 });
+// Form Sumbit Funtions
+const api = "https://voice-connect.atabek.space/";
+const form = document.querySelector("form");
 
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
 
+  const full_name = document.getElementById("fullName").value.trim();
+  const phone = document.getElementById("phoneNumber").value.trim();
+  const comment = document.getElementById("comment").value.trim();
 
-
-
-
-
-
-
-
-
-
-
-
-// const api = "https://voice-connect.atabek.space/";
-// const form = document.querySelector("form");
-
-// form.addEventListener("submit", function (e) {
-//   e.preventDefault();
-
-//   const full_name = document.getElementById("fullName").value.trim();
-//   const phone = document.getElementById("phoneNumber").value.trim();
-//   const comment = document.getElementById("comment").value.trim();
-
-//   fetch( api , {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json"
-//     },
-//     body: JSON.stringify({
-//       full_name,
-//       phone,
-//       comment
-//     })
-//   })
-//     .then(response => response.json())
-//     .then(data => {
-//       console.log("Server result:", data);
-//       alert("Sucsess!");
-//       form.reset();
-//     })
-//     .catch(error => {
-//       console.error("Error:", error);
-//       alert("Error");
-//     });
-// })
+  fetch( api , {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      full_name,
+      phone,
+      comment
+    })
+  })
+    .then(response => response.json())
+    .then(data => {
+      console.log("Server result:", data);
+      alert("Sucsess!");
+      form.reset();
+    })
+    .catch(error => {
+      console.error("Error:", error);
+      alert("Error");
+    });
+})
 
