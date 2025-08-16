@@ -1,3 +1,32 @@
+#faq{
+    padding: 60px 120px;
+}
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+.faq-content-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.faq-content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.faq-content-title{
+    display: flex;
+    justify-content: space-between;
+}
+.faq-content-title h2{
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
 .see-more{
     font-size: 30px;
     background: transparent;
