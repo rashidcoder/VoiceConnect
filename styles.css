@@ -295,6 +295,7 @@ header {
   display: block;
   width: 100%;
   height: 100px;
+  align-items: center;
   padding: 20px 120px;
   position: fixed;
   background-color: #fff;
@@ -305,6 +306,7 @@ header {
 .header-container {
   width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 4px 6px;
@@ -347,12 +349,7 @@ header .header-container .contact {
   flex-direction: column;
   background-color: #020817;
   color: white;
-  padding: 48px 24px 24px;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 100px 120px 30px 120px;
 }
 
 .footer-top {
